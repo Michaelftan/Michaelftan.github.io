@@ -21,7 +21,7 @@
         background-attachment: fixed;
         color: white;
       }
-
+      
       /* START of HEADER/NAVBAR */
       header {
         background: 	DimGray;
@@ -30,7 +30,7 @@
         height: 10vh;
         position: fixed;
       }
-
+      
       #navbar {
         display: flex;
         justify-content: space-between;
@@ -45,7 +45,7 @@
         text-decoration: none;
         color: white;
       }
-
+      
       #michaeltan {
         font-size: 1.5rem;
         margin-left: 2rem;
@@ -61,7 +61,7 @@
         flex-direction: row;
         justify-content: space-around;
       }
-
+      
       li:hover {
         animation: pulse 1s infinite;
       }
@@ -73,7 +73,7 @@
       }
       
       /* END of HEADER/NAVBAR */
-
+      
       section {
         height: 100vh;
         width: 100%;
@@ -90,7 +90,7 @@
         padding-top: 7rem;
         padding-left: 10rem;
       }
-
+      
       #welcome-section > h1 > span {
         font-size: 6rem;
         letter-spacing:.3rem;
@@ -105,7 +105,7 @@
         padding-left: 10rem;
         animation: shake 3s infinite;
       }
-
+      
       @keyframes shake {
         0% { transform: translate(0, 0); }
         10% { transform: translate(-10px, 0); }
@@ -120,7 +120,7 @@
         100% { transform: translate(0, 0); }
       }
       /* END of NAME/WELCOME SECTION */
-
+      
       /* START of ABOUT SECTION */
       #about > h2 {
         margin-bottom: 3rem;
@@ -135,7 +135,7 @@
         padding-right: 7rem;
         margin-bottom: 3rem;
       }
-
+      
       .certificates {
         color: MediumTurquoise;
         font-style: italic;
@@ -143,6 +143,10 @@
       /* END of ABOUT SECTION */
       
       /* START of PORTFOLIO/PROJECTS SECTION */
+      /* #projects > h2 {
+        margin-bottom: 3rem;
+      } */
+      
       #projects {
         height: auto;
       }
@@ -152,7 +156,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
       }
-
+      
       .project-tile {
         flex: 0 0 30%;
         text-align: center;
@@ -166,7 +170,7 @@
         color: LightSkyBlue;
         text-decoration: none;
       }
-
+      
       #cash-register {
         margin-left: auto;
         margin-right: auto;
@@ -182,7 +186,7 @@
       #contact {
         display: flex;
       }
-
+      
       #contact-container {
         width: 40%;
       }
@@ -191,15 +195,21 @@
         margin-top: 9rem;
         margin-bottom: 2rem;
       }
-
+      
       #contact-container > h3, #contact-container > p {
         margin-left: 5rem;
       }
+      
+      #contact-container > p > span {
+        display: block;
+        margin-left: .75rem;
+      }
+      
       #form-container {
         width: 60%;
         padding: 5rem 6rem 0 6rem;
       }
-
+      
       form {
         display: flex;
         flex-direction: column;
@@ -212,7 +222,7 @@
         min-height: 3em;
         font-size: 1rem;
       }
-
+      
       #submit-button {
         border-radius: 15px;
         width: 40%;
@@ -229,7 +239,7 @@
         font-size: 1.1rem;
         border-top: 1px solid gray;
       }
-
+      
       footer > * {
         color: white;
         margin: 1.5rem 0 1.5rem 0;
@@ -241,7 +251,7 @@
       }
       /* END of FOOTER SECTION */
       
-
+      
       /* MEDIA MEDIA MEDIA */
       /* MEDIA MEDIA MEDIA */
       /* MEDIA MEDIA MEDIA */
@@ -254,7 +264,7 @@
         #michaeltan {
           margin-left: 0;
         }
-
+      
         #navigation {
           padding: 0 1rem 0 0;
         }
@@ -264,8 +274,9 @@
           margin-left: -1rem;
           padding: 0 0 0 0;
         }
+      
         /* end HEADER MEDIA */
-
+      
         section {
           padding-left: 0;
           padding-right: 0;
@@ -279,9 +290,10 @@
       
         #welcome-section > h1, #welcome-section > h2 {
           padding-left: 0;
+          animation: none;
         }
         /* end NAME MEDIA */
-
+      
         /* start ABOUT MEDIA */
         #about > h2 {
           text-align: center;
@@ -289,10 +301,10 @@
       
         #about > p {
           font-size: 1.1rem;
-          padding: 0 5rem 0 5rem;
+          padding: 0 10% 0 10%;
         }
         /* end ABOUT MEDIA */
-
+      
         /* start PORTFOLIO MEDIA */
         #projects > h2 {
           text-align: center;
@@ -313,27 +325,41 @@
           width: 50%;
         }
         /* end PORTFOLIO MEDIA */
-
+      
         /* start CONTACT MEDIA */
-        #contact-container {
-          width: 50%;
+        #contact {
+          flex-direction: column;
         }
       
-        #form-container {
-          padding: 5rem 2rem 0 2rem;
-          width: 50%;
+        #contact-container {
+          width: 70%;
+          margin: 0 auto 0 auto;
         }
       
         #contact-container > h2 {
           text-align: center;
         }
       
-        #contact-container > h3, #contact-container > p {
-          margin-left: 1rem;
+        #contact-container > h3 {
+          margin-top: 3rem;
         }
-
+      
+        #contact-container > h3, #contact-container > p {
+          margin-left: 4rem;
+        }
+      
+        #form-container {
+          padding: 0rem 2rem 0 2rem;
+          width: 70%;
+          margin: 0 auto 0 auto;
+        }
+      
+        #form-container > h3 {
+          margin-top: 3rem;
+        }
+      
         #submit-button {
-          width: 100%
+          width: 80%
         }
       
         label, input, textarea {
@@ -418,7 +444,7 @@
         <h2>Let's work together...</h2>
         <h3>Contact info:</h3>
         <p>+639277440035</p>
-        <p>tanmichael_1988@yahoo.com</p>
+        <p>tanmichael_1988<span>@yahoo.com</span></p>
       </div>
       <div id="form-container">
         <h3>Want to send me a message?</h3>
