@@ -5,7 +5,343 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Michael Tan - Personal Portfolio</title>
     <!-- Link to custom CSS file -->
-    <link rel="stylesheet" href="styles.css">
+<!--     <link rel="stylesheet" href="styles.css"> -->
+    <styles>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        width: 100%;
+        font-size: 1.1rem;
+        font-family: "Helvetica";
+        background-image: url("https://e0.pxfuel.com/wallpapers/329/765/desktop-wallpaper-web-design-dark-developer.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        color: white;
+      }
+
+      /* START of HEADER/NAVBAR */
+      header {
+        background: 	DimGray;
+        border-bottom: 1px solid gray;
+        width: 100%;
+        height: 10vh;
+        position: fixed;
+      }
+
+      #navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      ul {
+        list-style-type: none;
+      }
+      
+      .nav-link {
+        text-decoration: none;
+        color: white;
+      }
+
+      #michaeltan {
+        font-size: 1.5rem;
+        margin-left: 2rem;
+      }
+      
+      #michaeltan > li > a{
+        color: orangered;
+      }
+      
+      #navigation {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      li:hover {
+        animation: pulse 1s infinite;
+      }
+      
+      @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.2); }
+        100% { transform: scale(1); }
+      }
+      
+      /* END of HEADER/NAVBAR */
+
+      section {
+        height: 100vh;
+        width: 100%;
+        padding-top: 10vh;
+        padding-left: 10%;
+        padding-right: 10%; 
+      }
+      
+      /* START of NAME/WELCOME SECTION */
+      #welcome-section > h1{
+        color: white;
+        font-size: 5rem;
+        margin-bottom: 0;
+        padding-top: 7rem;
+        padding-left: 10rem;
+      }
+
+      #welcome-section > h1 > span {
+        font-size: 6rem;
+        letter-spacing:.3rem;
+        margin-left: 1rem;
+        color: orangered;
+      }
+      
+      #welcome-section > h2{
+        color: white;
+        font-size: 3rem;
+        margin-top: 1rem;
+        padding-left: 10rem;
+        animation: shake 3s infinite;
+      }
+
+      @keyframes shake {
+        0% { transform: translate(0, 0); }
+        10% { transform: translate(-10px, 0); }
+        20% { transform: translate(10px, 0); }
+        30% { transform: translate(-10px, 0); }
+        40% { transform: translate(10px, 0); }
+        50% { transform: translate(-10px, 0); }
+        60% { transform: translate(10px, 0); }
+        70% { transform: translate(-10px, 0); }
+        80% { transform: translate(10px, 0); }
+        90% { transform: translate(-10px, 0); }
+        100% { transform: translate(0, 0); }
+      }
+      /* END of NAME/WELCOME SECTION */
+
+      /* START of ABOUT SECTION */
+      #about > h2 {
+        margin-bottom: 3rem;
+      }
+      
+      #about > p {
+        font-size: 1.2em;
+        letter-spacing: .06rem;
+        text-align: justify;
+        text-indent: 3rem;
+        padding-left: 7rem;
+        padding-right: 7rem;
+        margin-bottom: 3rem;
+      }
+
+      .certificates {
+        color: MediumTurquoise;
+        font-style: italic;
+      }
+      /* END of ABOUT SECTION */
+      
+      /* START of PORTFOLIO/PROJECTS SECTION */
+      #projects {
+        height: auto;
+      }
+      
+      #project-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .project-tile {
+        flex: 0 0 30%;
+        text-align: center;
+      }
+      
+      img {
+        width: 40%;
+      }
+      
+      .project-tile > h3 > a {
+        color: LightSkyBlue;
+        text-decoration: none;
+      }
+
+      #cash-register {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      .project-tile > h3:hover {
+        animation: pulse 1s infinite;
+      }
+      
+      /* END of PORTFOLIO/PROJECTS SECTION */
+      
+      /* START of CONTACT SECTION */
+      #contact {
+        display: flex;
+      }
+
+      #contact-container {
+        width: 40%;
+      }
+      
+      #contact-container > h3 {
+        margin-top: 9rem;
+        margin-bottom: 2rem;
+      }
+
+      #contact-container > h3, #contact-container > p {
+        margin-left: 5rem;
+      }
+      #form-container {
+        width: 60%;
+        padding: 5rem 6rem 0 6rem;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      label, input, textarea {
+        display: block;
+        margin: 1rem 0 0 0;
+        width: 100%;
+        min-height: 3em;
+        font-size: 1rem;
+      }
+
+      #submit-button {
+        border-radius: 15px;
+        width: 40%;
+        margin: 2rem auto 0 auto;
+      }
+      /* END of CONTACT SECTION */
+      
+      /* START of FOOTER SECTION */
+      footer {
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1.1rem;
+        border-top: 1px solid gray;
+      }
+
+      footer > * {
+        color: white;
+        margin: 1.5rem 0 1.5rem 0;
+        text-decoration: none;
+      }
+      
+      footer > *:hover {
+        animation: pulse 1s infinite;
+      }
+      /* END of FOOTER SECTION */
+      
+
+      /* MEDIA MEDIA MEDIA */
+      /* MEDIA MEDIA MEDIA */
+      /* MEDIA MEDIA MEDIA */
+      @media (max-width: 600px) {
+        /* start HEADER MEDIA */
+        header {
+          background: orangered;
+        }
+      
+        #michaeltan {
+          margin-left: 0;
+        }
+
+        #navigation {
+          padding: 0 1rem 0 0;
+        }
+      
+        #michaeltan > li > a {
+          color: dimgray;
+          margin-left: -1rem;
+          padding: 0 0 0 0;
+        }
+        /* end HEADER MEDIA */
+
+        section {
+          padding-left: 0;
+          padding-right: 0;
+          height: auto;
+        }
+        /* start NAME MEDIA */
+        #welcome-section {
+          text-align:center;
+          height: 100vh;
+        }
+      
+        #welcome-section > h1, #welcome-section > h2 {
+          padding-left: 0;
+        }
+        /* end NAME MEDIA */
+
+        /* start ABOUT MEDIA */
+        #about > h2 {
+          text-align: center;
+        }
+      
+        #about > p {
+          font-size: 1.1rem;
+          padding: 0 5rem 0 5rem;
+        }
+        /* end ABOUT MEDIA */
+
+        /* start PORTFOLIO MEDIA */
+        #projects > h2 {
+          text-align: center;
+          margin-bottom: 3rem;
+        }
+      
+        #project-container {
+          flex-direction: column;
+          padding: 0 5rem 0 5rem;
+        }
+      
+        .project-tile {
+          margin-bottom: 3rem;
+          padding: 1rem;
+        }
+      
+        img {
+          width: 50%;
+        }
+        /* end PORTFOLIO MEDIA */
+
+        /* start CONTACT MEDIA */
+        #contact-container {
+          width: 50%;
+        }
+      
+        #form-container {
+          padding: 5rem 2rem 0 2rem;
+          width: 50%;
+        }
+      
+        #contact-container > h2 {
+          text-align: center;
+        }
+      
+        #contact-container > h3, #contact-container > p {
+          margin-left: 1rem;
+        }
+
+        #submit-button {
+          width: 100%
+        }
+      
+        label, input, textarea {
+          min-height: 2em;
+        }
+        /* end CONTACT MEDIA */
+      }
+    </styles>
     <!-- link to fonts -->
     <script src="https://kit.fontawesome.com/85b5affc47.js" crossorigin="anonymous"></script>
   </head>
