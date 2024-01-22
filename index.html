@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Tan - Personal Portfolio</title>
+    <!-- Link to custom CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- link to fonts -->
+    <script src="https://kit.fontawesome.com/85b5affc47.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- This is for HEADER section-->
+    <header>
+      <nav id="navbar">
+        <ul id="michaeltan">
+          <li><a class="nav-link" href="#welcome-section">Michael Tan</a></li>
+        </ul>
+        <ul id="navigation">
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#projects">Portfolio</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- This is for NAME section -->
+    <section id="welcome-section">
+      <h1>hi, im <span>Michael</span></h1>
+      <h2>web developer</h2>
+    </section>
+    <!-- This is for ABOUT section-->
+    <section id="about">
+      <h2>About</h2>
+      <p id="first-paragraph">My name is Michael Tan, and I am a web developer with a vision to create stunning and responsive websites. I have a keen interest in both front-end and back-end development, and I enjoy learning new technologies and frameworks. I am passionate about delivering websites that are not only visually appealing but also easy to use and navigate.</p>
+      <p id="second-paragraph">I am a passionate and self-motivated web developer who is always learning new skills and technologies. I am currently taking online courses from freeCodeCamp and Harvard CS50, earning certificates in <span class="certificates">Responsive Web Design</span> and in <span class="certificates">JavaScript Algorithms and Data Structures</span>. I have proficiency in HTML, CSS, JavaScript, C, Python, and SQL, and I can create websites that are attractive, functional, and user-friendly.</p>
+    </section>
+    <!-- This is for PORTFOLIO section -->
+    <section id="projects">
+      <h2>Portfolio</h2>
+      <div id="project-container">
+      <!-- PRODUCT LANDINGPAGE -->
+        <article id="product-landing-page" class="project-tile">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw0PzySV_1mTxlulXFVw2Zlm1kYz_FXD3dOg&usqp=CAU">
+          <h3><a href="https://codepen.io/Michaelftan/full/mdoPvKx">Product Landing Page<a/></h3>
+          <p>a simple product landing page displaying flex and grid.</p>
+        </article>
+        <!-- CASH REGISTER -->
+        <article id="cash-register" class="project-tile">
+          <img src="https://img.freepik.com/free-vector/hand-drawn-cartoon-cash-register-illustration_23-2150942812.jpg?size=338&ext=jpg&ga=GA1.1.1546980028.1702684800&semt=ais">
+          <h3><a href="https://codepen.io/Michaelftan/full/gOErZVR">Cash Register</a></h3>
+          <p>displays change per denomination and status after transaction of the cash register.</p> 
+        </article>
+        <!-- CAESAR'S CIPHER -->
+        <article id="caesars-cipher" class="project-tile">
+          <img src="https://cdn-icons-png.flaticon.com/512/1792/1792193.png">
+          <h3><a href="https://codepen.io/Michaelftan/full/bGZpyVM">Caesar's Cipher</a></h3>
+          <p>encrypt or decrypt messages using caesar's cipher.</p>
+        </article>
+        <!-- TELEPHONE NUMBER VALIDATOR -->
+        <article id="telephone-number-validator" class="project-tile">
+          <img src="data:image/png;base64,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">
+          <h3><a href="https://codepen.io/Michaelftan/full/gOEryNR">Telephone Number Validator<a/></h3>
+          <p>verify if a telephone number is a valid US telephone format.</p>
+        </article>
+        <!-- ROMAN NUMERAL CONVERTER -->
+        <article id="roman-numeral-converter" class="project-tile">
+          <img src="https://store-images.s-microsoft.com/image/apps.55179.14326629643791836.d0a20010-b85c-4d8a-ab2c-66d859d159b0.9079962e-e1bf-44fc-abef-06bb47190b66?h=464">
+          <h3><a href="https://codepen.io/Michaelftan/full/gOEMead">Roman Numeral Converter<a/></h3>
+          <p>convert hindu-arabic numeral to roman numeral.</p>
+        </article>
+        <!-- PALINDROME CHECKER-->
+        <article id="palindrome-checker" class="project-tile">
+          <img src="https://d33wubrfki0l68.cloudfront.net/66fb258bd4e647d9724a09ad2a4f324769e78ab0/128c9/img/palindrome-logo.svg">
+          <h3><a href="https://codepen.io/Michaelftan/full/jOJrKGQ">Palindrome Checker</a></h3>
+          <p>check if a word, phrase or sequence reads the same backward as forward.</p>
+        </article>
+      </div>
+    </section>
+    <!-- This is for CONTACT section -->
+    <section id="contact">
+      <div id="contact-container">
+        <h2>Let's work together...</h2>
+        <h3>Contact info:</h3>
+        <p>+639277440035</p>
+        <p>tanmichael_1988@yahoo.com</p>
+      </div>
+      <div id="form-container">
+        <h3>Want to send me a message?</h3>
+        <form action="mailto:tanmichael_1988@yahoo.com" method="post" enctype="text/plain">
+          <label for="name">Name<input id="name" type="text" placeholder="John Doe"></label>
+          <label for="email">E-mail<input id="email" type="email" placeholder="johndoe@gmail.com"></label>
+          <label for="message-box">Message<textarea id="message-box" rows="3" cols="30" placeholder="How can I help you?"></textarea></label>
+          <input id="submit-button" type="submit" value="Send message">
+        </form>
+      </div>
+    </section>
+    <!-- This is for FOOTER section -->
+    <footer>
+      <a id="profile-link" target="_blank" href="https://github.com/Michaelftan">GitHub <i class="fa-brands fa-github"></i></a>
+      <a target="_blank" href="https://codepen.io/Michaelftan">CodePen <i class="fa-brands fa-codepen"></i>
+      <a target="_blank" href="https://www.freecodecamp.org/fccbe964890-a23c-4445-8df5-d257daa1dab0">freeCodeCamp <i class="fa-brands fa-free-code-camp"></i></a>
+    </footer>
+  </body>
+</html>
